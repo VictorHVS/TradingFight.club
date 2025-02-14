@@ -1,60 +1,60 @@
 [versions]
 # Plugins
-detekt = "1.22.0"
-androidGradle = "7.3.1"
+detekt = "1.23.7"
+androidGradle = "8.8.1"
 sonarqube = "3.2.0"
-ktlint = "0.47.1"
+ktlint = "0.51.0-FINAL"
 junit = "4.13.2"
-ksp = "1.7.10-1.0.6"
-firebaseCrashlyticsPlugin = "2.9.2"
-googleServices = "4.3.14"
-gmsAuthService = "20.4.0"
+ksp = "2.1.10-1.0.30"
+firebaseCrashlyticsPlugin = "3.0.3"
+googleServices = "4.4.2"
+gmsAuthService = "21.3.0"
 
 coverage-engine = "1.0.686"
 
 # production libraries
-coreKtx = "1.9.0"
-androidxAppCompat = "1.5.1"
-lifecycleRuntime = "2.5.1"
-coil = "2.2.2"
+coreKtx = "1.15.0"
+androidxAppCompat = "1.7.0"
+lifecycleRuntime = "2.8.7"
+coil = "2.7.0"
 compose = "1.3.2"
-composeAccompanist = "0.28.0"
+composeAccompanist = "0.36.0"
 androidxComposeBom = "2022.12.00"
 androidxComposeCompiler = "1.3.2"
 androidxComposeRuntimeTracing = "1.0.0-alpha01"
 composeCompiler = "1.3.0"
 composeNavigation = "2.5.2"
-composeNavigationHilt = "1.0.0"
-androidxActivity = "1.6.1"
+composeNavigationHilt = "1.2.0"
+androidxActivity = "1.10.0"
 composePaging = "1.0.0-alpha16"
 composeSwipeRefresh = "0.24.0-alpha"
 composeMaterial3 = "1.0.0-beta03"
-desugar = "1.1.6"
-hilt = "2.44.2"
-kotlin = "1.7.10"
-kotlinCoroutines = "1.6.4"
-kotlinSerialization = "1.4.1"
-kotlinSerializationConverter = "0.8.0"
-kotlinCoroutinePlayServices = "1.6.4"
-lifecycle = "2.5.1"
+desugar = "2.1.4"
+hilt = "2.55"
+kotlin = "2.1.10"
+kotlinCoroutines = "1.10.1"
+kotlinSerialization = "1.8.0"
+kotlinSerializationConverter = "1.0.0"
+kotlinCoroutinePlayServices = "1.10.1"
+lifecycle = "2.8.7"
 
-firebaseBoM = "31.1.1"
-appCheckDebug = "16.1.0"
+firebaseBoM = "33.9.0"
+appCheckDebug = "18.0.0"
 
 # test libraries
 testJunit = "5.9.0"
-testMockk = "1.13.2"
+testMockk = "1.13.16"
 testTurbine = "0.9.0"
 testKotest = "5.4.2"
 
 # android test libraries
-testAndroidRunner = "1.5.1"
-androidxTestCore = "1.5.0"
-androidxTestExt = "1.1.4"
-androidxTestRunner = "1.5.1"
-androidxTestRules = "1.5.0"
-androidxUiAutomator = "2.2.0"
-androidxEspresso = "3.5.0"
+testAndroidRunner = "1.6.2"
+androidxTestCore = "1.6.1"
+androidxTestExt = "1.2.1"
+androidxTestRunner = "1.6.2"
+androidxTestRules = "1.6.1"
+androidxUiAutomator = "2.3.0"
+androidxEspresso = "3.6.1"
 
 
 
@@ -93,10 +93,10 @@ compose-material = { group = "androidx.compose.material", name = "material" }
 compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 compose-material3-windowSizeClass = { group = "androidx.compose.material3", name = "material3-window-size-class" }
 compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
-compose-paging3 = { module = "androidx.paging:paging-compose", version = "1.0.0-alpha17" }
-compose-navigation = { module = "androidx.navigation:navigation-compose", version = "2.5.3" }
+compose-paging3 = { module = "androidx.paging:paging-compose", version = "3.3.6" }
+compose-navigation = { module = "androidx.navigation:navigation-compose", version = "2.8.7" }
 compose-navigationHilt = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "composeNavigationHilt" }
-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version = "2.5.1" }
+lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version = "2.8.7" }
 compose-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata" }
 compose-runtime-tracing = { group = "androidx.compose.runtime", name = "runtime-tracing", version.ref = "androidxComposeRuntimeTracing" }
 compose-ui-test = { group = "androidx.compose.ui", name = "ui-test-junit4" }
@@ -127,7 +127,7 @@ firebase-appCheckDebug = { module = "com.google.firebase:firebase-appcheck-debug
 # test libraries
 test-junit = { module = "junit:junit", version.ref = "junit" }
 test-kotlin = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
-test-kotest = { module = "io.kotest:kotest-assertions-core", version = "5.5.4" }
+test-kotest = { module = "io.kotest:kotest-assertions-core", version = "5.9.1" }
 androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidxTestCore" }
 androidx-test-ext = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "androidxTestExt" }
 androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
@@ -149,7 +149,7 @@ ktlint = { module = "com.pinterest:ktlint", version.ref = "ktlint" }
 
 # Detekt
 detekt-compose = { module = "com.twitter.compose.rules:detekt", version = "0.0.26" }
-detekt-compose2 = { module = "ru.kode:detekt-rules-compose", version = "1.2.2" }
+detekt-compose2 = { module = "ru.kode:detekt-rules-compose", version = "1.4.0" }
 detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
 gradle-hilt = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hilt" }
 gradle-detekt = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
